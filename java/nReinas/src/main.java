@@ -34,21 +34,7 @@ public class main {
         return true;
     }
 
-    public static void reina1(int pos, int[] tablero) {
-        for (int i = 0; i < tablero.length; i++) {
-            if (validar(i, pos, tablero)) {
-                tablero[pos] = i;
-                reinas(pos + 1, tablero);
-                if (pos == tablero.length) {
-                    System.out.println(Arrays.toString(tablero));
-                    break;
-                }
-            } else {
-                reina1(pos + 1, tablero);
-
-            }
-        }
-    }
+    
 
     public static void reinas(int pos, int[] tablero) {
         if (pos == tablero.length) {
